@@ -85,6 +85,7 @@ int main()
 	int* arr=new int[size] { -1,0,4,7,-12,10,10,4,0,5}; //!!! error
 	//int* arr = new int[size]{ -1,0,14,7,-12,10,11,4,1,5 }; //!!!error
 	//quicksort(arr, 0, size);
+	//hhi
 	quickSort(arr, size - 1);
 	for (int i = 0; i < size; i++)//iijij
 	{
