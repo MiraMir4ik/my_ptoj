@@ -54,15 +54,10 @@ int min(int a, int b) {
 int mul(int a, int b) {
 	return a * b;
 }
+int division(int a, int b) {
+	return a / b;
+}
 
-double getPrice(int a)
-{
-	return a * 0.5;
-}
-void showPrice(int a, double b)
-{
-	cout << a + b;
-}
 int main() {
 	//int n = 100;
 	//int* const ptrN = &n;//константный указатель
@@ -98,14 +93,22 @@ int main() {
 	for (size_t i = 0; i < countFunctions; i++) {
 		cout << pointerMath[i](10, 5) << endl;
 	}*/
+	//1
+	cout << "\t\t\tCalculator\n";
+	while (true) {
+		int number1;
+		int number2;
+		cout << "Enter first number -->";
+		cin >> number1;
+		cout << "Enter second number -->";
+		cin >> number2;
+		cout << "Choose option:\n1)+  2)-\n3)*   4)/" << endl;
+		int choice;
+		cin >> choice;
+		const int countFunctions = 4;
+		int(*pointerMath[countFunctions])(int, int) = { sum,min,mul,division };
 
-	double (*pointerFunction1)(int);
-	pointerFunction1 = getPrice;
-	cout<<pointerFunction1(2);
-	void (*pointerFunction2)(int,double);
-	pointerFunction2 = showPrice;
-	pointerFunction2(2,2.5);
-	const int countFunctions = 3;
-	int(*pointerMath[countFunctions])(int, int) = { sum,min,mul };
+		cout << pointerMath[choice-1](number1, number2) << endl;
+	}
 	return(0);
 }
