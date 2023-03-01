@@ -124,7 +124,7 @@ int main() {
 
 	const int rows = 3, cols = 4;
 	int arr[rows][cols] = { {1,2,3,4} ,{12,-4,3,34}, {9,2,-8,10} };
-	int(&ref)[rows][cols] = arr;//
+	int(&ref)[rows][cols] = arr;
 	average(arr, rows, cols);
 	for (int i = 0; i < rows; i++) {
 
