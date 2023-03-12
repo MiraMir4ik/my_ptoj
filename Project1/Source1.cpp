@@ -108,7 +108,7 @@ int main() {
 		const int countFunctions = 4;
 		int(*pointerMath[countFunctions])(int, int) = { sum,min,mul,division };
 
-		cout << pointerMath[choice-1](number1, number2) << endl;
+		cout << pointerMath[choice-1](number1, number2) << endl;//
 	}
 	return(0);
 }
