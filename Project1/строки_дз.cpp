@@ -3,7 +3,9 @@ using namespace std;
 
 
 int main() {
-	//1
+	//1  Дана строка символов. Пользователь вводит искомый символ.
+	//Посчитать, сколько раз он встречается в строке.
+
 	/*const int SIZE = 12;
 	char line[SIZE] = {"Hello World"};
 	char symbol;
@@ -17,7 +19,9 @@ int main() {
 	}
 	cout <<"Symbol \""<<symbol<<"\" repiets "<< count<<" times";*/
 
-	//2
+	//2 Дана строка символов. Определить количество букв, цифр и остальных символов,
+	//присутствующих в строке.
+
 	/*const int SIZE = 11;
 	char line[SIZE] = { "H35fgjeh97" };
 	unsigned int number_count = 0;
@@ -37,9 +41,10 @@ int main() {
 	}
 	cout << "Letter count: " << letter_count << "\nnumber count: " << number_count << "\nother count: " << other_count;*/
 
-	//3
+	//3 Дана строка символов. Необходимо проверить, является ли эта строка палиндромом.
 
-	char line[] = { "1232" };
+
+	char line[] = { "lol" };
 	bool palindrom = 1;
 	for (int i = 0; i < strlen(line); i++) {
 		if (line[i] == line[strlen(line) - i - 1]) {
