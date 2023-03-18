@@ -68,9 +68,11 @@ int main() {
 	show(arr2, size + count);
 
 
-	delete arr;
-	delete arr2;
+	delete[] arr;
+	delete[] arr2;
 	arr = nullptr;
 	arr2 = nullptr;
+
+
 	return(0);
 }
